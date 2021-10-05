@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff !important;
+    list-style: none;
+    align-items: center;
+}
+
+body {
+    background-color: #0f1113;
+}
+
+.app {
+    margin-top: 100px;
+}
+
+.row.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #0f1113;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.app > .row{
+    margin: 40px 0;
+}
+
+.social {
+    font-size: 40px;
+}
+
+#dropdownMenuButton1, .btn-primary.projects, .btn-primary.experience, .btn-primary.repositories{
+    float: right !important;
+}
+.btn-primary {
+    margin: 40px 0;
+}
+
+.section-title {
+    margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.navbar-brand {
+    width: 30px;
+}
+.logo {
+    width: 100%;
+}
+
+.form-control.search {
+    background-color: #212529;
+    border: none;
+}
+.form-control.search::placeholder {
+    color: #fff;
+}
+
+.container.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.about-description {
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-description {
+        padding: 0 60px;
+    }
+}
+
+.card-space-between {
+    margin: 5px;
+}
+
+.container.projects .row .col-6 .section-title {
+    margin: 0;
+}
+
+.container.projects .row .col-12 .card-group {
+    margin-top: 30px;
+}
+
+.container.repositories {
+    background-color: #212529;
+}
+
+.section-title.repositories {
+    margin: 60px 0 50px 0;
+}
+
+.bi-archive {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .card-text.repositories {
+        margin: 1.5em 0 0 5.5em;
+    }
+    .bi-archive {
+        background-color: #0b5ed7;
+        padding: 17px 20px;
+        border-radius: 65px;
+        margin: 15px;
+        font-size: 20px;
+        display: unset !important;
+    }
+}
+
+.cards-repositories {
+    border: none !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #0f1113;
+}
+
+.container.recommendations {
+    margin-top: 60px;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.navbar-brand-footer {
+    height: 40px;
+}
+
+.container-fluid.copy {
+    padding: 0 !important;
+}
+.container-fluid.copy p {
+    margin: 0 !important;
+    color: #fafafa !important;
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid.copy p {
+        text-align: center;
+        margin: 20px 0 !important;
+    }
+    .container-fluid.copy {
+        justify-content: center;
+    }
+}
