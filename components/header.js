@@ -24,7 +24,7 @@ header.innerHTML = `<section class="row header">
                     <a
                         class="nav-link active"
                         aria-current="page"
-                        href="../index.html#about"
+                        href="portfolio/../index.html#about"
                         >perfil</a
                     >
                 </li>
