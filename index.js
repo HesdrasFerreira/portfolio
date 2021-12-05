@@ -7,6 +7,7 @@ function getGHUserData() {
         .then(data => {
             userAvatarImg.src = data.avatar_url;
             myName.textContent = data.name;
+            myBio.textContent = data.bio;
             repoBtn.href = `https://github.com/${githubUser}?tab=repositories`;
             document.title = `${data.name} - Porfolio`;
         });
