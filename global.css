@@ -5,6 +5,7 @@
     color: #fff !important;
     list-style: none;
     align-items: center;
+    text-decoration: none !important;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     left: 0;
 }
 
-.app > .row{
+.app > .row {
     margin: 40px 0;
 }
 
@@ -36,7 +37,10 @@ body {
     font-size: 40px;
 }
 
-#dropdownMenuButton1, .btn-primary.projects, .btn-primary.experience, .btn-primary.repositories{
+#dropdownMenuButton1,
+.btn-primary.projects,
+.btn-primary.experience,
+.btn-primary.repositories {
     float: right !important;
 }
 .btn-primary {
@@ -93,7 +97,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
     .about-description {
         padding: 0 60px;
     }
@@ -139,9 +142,14 @@ body {
 
 .cards-repositories {
     border: none !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     background-color: #0f1113;
 }
 

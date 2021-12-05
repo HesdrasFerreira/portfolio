@@ -1,331 +1,422 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt_BR">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="global.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+        />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <title>Hesdras Ferreira</title>
+    </head>
 
-    <title>Hesdras Ferreira</title>
-</head>
+    <body>
+        <header id="header" class="container header"></header>
 
-<body>
-    <header class="container header">
-        <section class="row header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="logo" src="assets/images/hf-logo.png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#about">perfil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">projetos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experience">experiência</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#repositories">repositórios github</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#recommendations">conteúdo</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control search me-2" type="search" placeholder="Pesquisar..."
-                                aria-label="Search">
-                        </form>
+        <main class="app">
+            <section class="container about" id="about">
+                <div class="row">
+                    <div class="col-12 col-md-4 about-image-col">
+                        <img id="userAvatarImg" class="about-image" />
+                    </div>
+                    <div class="col-12 col-md-8 about-description">
+                        <h1 id="myName"></h1>
+                        <p>
+                            Sou um engenheiro de software especializado em
+                            construir (e ocasionalmente projetar) experiências
+                            digitais excepcionais. Atualmente, estou focado na
+                            construção de produtos acessíveis e centrados no ser
+                            humano na Binance.
+                        </p>
+                        <h2>Redes sociais</h2>
+                        <a href="#"><i class="social bi bi-facebook"></i></a>
+                        <span class="card-space-between"></span>
+                        <a href="#"><i class="social bi bi-twitter"></i></a>
+                        <span class="card-space-between"></span>
+                        <a href="#"><i class="social bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </nav>
-        </section>
-    </header>
+            </section>
 
-    <main class="app">
-
-        <section class="container about" id="about">
-            <div class="row">
-                <div class="col-12 col-md-4 about-image-col">
-                    <img class="about-image" src="assets/images/about-image.jpg" alt="" srcset="">
-                </div>
-                <div class="col-12 col-md-8 about-description">
-                    <h1>Hesdras Ferreira</h1>
-                    <p>Sou um engenheiro de software especializado em construir (e ocasionalmente projetar) experiências
-                        digitais excepcionais. Atualmente, estou focado na construção de produtos acessíveis e centrados
-                        no ser humano na Binance.</p>
-                    <h2>Redes sociais</h2>
-                    <a href="#"><i class="social bi bi-facebook"></i></a>
-                    <span class="card-space-between"></span>
-                    <a href="#"><i class="social bi bi-twitter"></i></a>
-                    <span class="card-space-between"></span>
-                    <a href="#"><i class="social bi bi-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="container projects" id="projects">
-            <div class="row">
-                <div class="col-6">
-                    <h2 class="section-title">Projetos</h2>
-                </div>
-                <div class="col-6">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle text-white bg-dark" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categoria: Todos
+            <section class="container projects" id="projects">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="section-title">Projetos</h2>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button
+                                class="
+                                    btn btn-secondary
+                                    dropdown-toggle
+                                    text-white
+                                    bg-dark
+                                "
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Categoria: Todos
+                            </button>
+                            <ul
+                                class="dropdown-menu text-white bg-dark"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Web sites</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Arte gráfica</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Podcast</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card-group">
+                            <div class="card text-white bg-dark">
+                                <img
+                                    src="assets/images/halcyon.png"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Halcyon Theme</h5>
+                                </div>
+                            </div>
+                            <div class="card-space-between"></div>
+                            <div class="card text-white bg-dark">
+                                <img
+                                    src="assets/images/demo.png"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Spotify Profile</h5>
+                                </div>
+                            </div>
+                            <div class="card-space-between"></div>
+                            <div class="card text-white bg-dark">
+                                <img
+                                    src="assets/images/halcyon.png"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Pova</h5>
+                                </div>
+                            </div>
+                            <div class="card-space-between"></div>
+                            <div class="card text-white bg-dark">
+                                <img
+                                    src="assets/images/demo.png"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Libra</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            type="button"
+                            class="
+                                col-12 col-md-5 col-lg-4
+                                btn btn-primary
+                                projects
+                            "
+                        >
+                            <i class="bi bi-plus"></i> Carregar mais projetos
                         </button>
-                        <ul class="dropdown-menu text-white bg-dark" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Web sites</a></li>
-                            <li><a class="dropdown-item" href="#">Arte gráfica</a></li>
-                            <li><a class="dropdown-item" href="#">Podcast</a></li>
-                        </ul>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="card-group">
-                        <div class="card text-white bg-dark">
-                            <img src="assets/images/halcyon.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Halcyon Theme</h5>
-                            </div>
-                        </div>
-                        <div class="card-space-between"></div>
-                        <div class="card text-white bg-dark">
-                            <img src="assets/images/demo.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Spotify Profile</h5>
-                            </div>
-                        </div>
-                        <div class="card-space-between"></div>
-                        <div class="card text-white bg-dark">
-                            <img src="assets/images/halcyon.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pova</h5>
-                            </div>
-                        </div>
-                        <div class="card-space-between"></div>
-                        <div class="card text-white bg-dark">
-                            <img src="assets/images/demo.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Libra</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="col-12 col-md-5 col-lg-4 btn btn-primary projects"><i
-                            class="bi bi-plus"></i>
-                        Carregar
-                        mais projetos</button>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="container experience" id="experience">
-            <div class="row">
-                <div class=" col-12">
-                    <h2 class="section-title">Experiência</h2>
-                    <div class="card text-white bg-dark mb-3">
-                        <div class=" row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/images/experience-binance.jpg" class="img-fluid rounded-start"
-                                    alt="Binance">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Software Engineer @ Binance</h5>
-                                    <p class="card-text">Binance é a empresa global de blockchain por trás da maior
-                                        bolsa de criptomoedas do mundo em volume de negócios e usuários.</p>
-                                    <p class="card-text"><small class="text-muted">Período: 2019 – Até o momento</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-dark mb-3">
-                        <div class=" row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/images/experience-apple.jpg" class="img-fluid rounded-start"
-                                    alt="Apple">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">UX Designer @ Apple</h5>
-                                    <p class="card-text">A principal responsabilidade para esta função é destilar
-                                        processos de negócios altamente complexos em soluções limpas e compreensíveis,
-                                        trabalhando com membros da Equipe de Ferramentas, bem como nossos parceiros
-                                        multifuncionais, gerenciamento de programa e patrocinadores executivos para
-                                        liderar software interno de ponta a ponta iniciativas.</p>
-                                    <p class="card-text"><small class="text-muted">Período: 2016 – 2019</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-dark mb-3">
-                        <div class=" row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/images/experience-google.jpg" class="img-fluid rounded-start"
-                                    alt="Google">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Desenvolvedor mobile @ Google</h5>
-                                    <p class="card-text">Um problema não é realmente resolvido até que seja resolvido
-                                        para todos. Googlers criam produtos que ajudam a criar oportunidades para todos,
-                                        seja na rua ou em todo o mundo. Traga sua visão, imaginação e um desprezo
-                                        saudável pelo impossível.</p>
-                                    <p class="card-text"><small class="text-muted">Período: 2014 – 2016</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="col-12 col-md-5 col-lg-4 btn btn-primary experience"><i
-                            class="bi bi-plus"></i>
-                        Carregar
-                        mais experiências</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid repositories bg-dark" id="repositories">
-            <div class="container">
+            <section class="container experience" id="experience">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title repositories">Repositórios GitHub</h2>
-                        <div class="card-group">
-                            <div class="card text-white bg-dark cards-repositories">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="bi bi-archive"></i>Halcyon</h5>
-                                    <p class="card-text repositories">Tema dark minimalista para VSCode. Disponível no
-                                        Visual Studio Marketplace.</p>
-                                    <p class="card-text repositories"><small class="text-muted">Atualizado em:
-                                            02/10/2021</small></p>
+                        <h2 class="section-title">Experiência</h2>
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="assets/images/experience-binance.jpg"
+                                        class="img-fluid rounded-start"
+                                        alt="Binance"
+                                    />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Software Engineer @ Binance
+                                        </h5>
+                                        <p class="card-text">
+                                            Binance é a empresa global de
+                                            blockchain por trás da maior bolsa
+                                            de criptomoedas do mundo em volume
+                                            de negócios e usuários.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-muted"
+                                                >Período: 2019 – Até o
+                                                momento</small
+                                            >
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-space-between"></div>
-                            <div class="card text-white bg-dark cards-repositories">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="bi bi-archive"></i>Spotify Profile</h5>
-                                    <p class="card-text repositories">Página web para visualizar dados personalizados de
-                                        perfis no
-                                        Spotify.</p>
-                                    <p class="card-text repositories"><small class="text-muted">Atualizado em:
-                                            02/10/2021</small></p>
+                        </div>
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="assets/images/experience-apple.jpg"
+                                        class="img-fluid rounded-start"
+                                        alt="Apple"
+                                    />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            UX Designer @ Apple
+                                        </h5>
+                                        <p class="card-text">
+                                            A principal responsabilidade para
+                                            esta função é destilar processos de
+                                            negócios altamente complexos em
+                                            soluções limpas e compreensíveis,
+                                            trabalhando com membros da Equipe de
+                                            Ferramentas, bem como nossos
+                                            parceiros multifuncionais,
+                                            gerenciamento de programa e
+                                            patrocinadores executivos para
+                                            liderar software interno de ponta a
+                                            ponta iniciativas.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-muted"
+                                                >Período: 2016 – 2019</small
+                                            >
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-space-between"></div>
-                            <div class="card text-white bg-dark cards-repositories">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="bi bi-archive"></i>Pova</h5>
-                                    <p class="card-text repositories">Ferramenta para analisar contas no Spotify e criar
-                                        perfis de usuário.</p>
-                                    <p class="card-text repositories"><small class="text-muted">Atualizado em:
-                                            02/10/2021</small></p>
+                        </div>
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="assets/images/experience-google.jpg"
+                                        class="img-fluid rounded-start"
+                                        alt="Google"
+                                    />
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Desenvolvedor mobile @ Google
+                                        </h5>
+                                        <p class="card-text">
+                                            Um problema não é realmente
+                                            resolvido até que seja resolvido
+                                            para todos. Googlers criam produtos
+                                            que ajudam a criar oportunidades
+                                            para todos, seja na rua ou em todo o
+                                            mundo. Traga sua visão, imaginação e
+                                            um desprezo saudável pelo
+                                            impossível.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-muted"
+                                                >Período: 2014 – 2016</small
+                                            >
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="col-12 col-md-5 col-lg-4 btn btn-primary repositories"><i
-                                class="bi bi-plus"></i>
-                            Carregar
-                            mais repositórios</button>
+                        <button
+                            type="button"
+                            class="
+                                col-12 col-md-5 col-lg-4
+                                btn btn-primary
+                                experience
+                            "
+                        >
+                            <i class="bi bi-plus"></i> Carregar mais
+                            experiências
+                        </button>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="container recommendations" id="recommendations">
-            <div class="col-12">
-                <h2 class="section-title repositories">Conteúdos recomendados</h2>
-                <div class="card-group">
-                    <div class="card text-white bg-dark">
-                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/PGxTuv6k0KI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">5 Hábitos que Todo o Programador Júnior Já Deveria Ter
-                            </h5>
-                            <p class="card-text"><small class="text-muted">23 de agosto de 2021</small></p>
+            <section
+                class="container-fluid repositories bg-dark"
+                id="repositories"
+            >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="section-title repositories">
+                                Repositórios GitHub
+                            </h2>
+                            <div class="card-group repos">
+                                <a href="#">
+                                    <div
+                                    class="
+                                    card
+                                    text-white
+                                    bg-dark
+                                    cards-repositories
+                                    "
+                                    >
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="card-space-between"></div>
-                    <div class="card text-white bg-dark">
-                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/J4BVaXkwmM8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">A Primeira Aula de Flutter Que Todo Mundo Deveria Ter
-                            </h5>
-                            <p class="card-text"><small class="text-muted">22 de fevereiro de 2021</small></p>
-                        </div>
-                    </div>
-                    <div class="card-space-between"></div>
-                    <div class="card text-white bg-dark">
-                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/f7JWDLFhR_c"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Como Fazer Uma API (o jeito mais fácil e moderno que eu já vi)
-                            </h5>
-                            <p class="card-text"><small class="text-muted">18 de janeiro de 2021</small></p>
-                        </div>
+                        <button
+                                type="button"
+                                class="
+                                    col-12 col-md-5 col-lg-4
+                                    btn btn-primary
+                                    repositories
+                                "
+                                target="_blank"
+                        >
+                            <a id="repoBtn" href="#" target="_blank ">
+                                    <i class="bi bi-plus"></i> Ver mais
+                                    repositórios
+                            </a>
+                        </button>
                     </div>
                 </div>
-                <div>
-                    <button type="button" class="col-12 col-md-5 col-lg-4 btn btn-primary recommendations"><i
-                            class="bi bi-plus"></i>
-                        Carregar
-                        mais recomendações
-                    </button>
-                </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
-
-    <footer>
-        <section class="container-fluid footer">
-            <div class="container">
-                <div class="row">
-                    <nav class="col-12 navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid copy">
-                            <p>Copyright &copy; 2021 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI
-                                    PUC Minas</strong> | by Hesdras Ferreira</p>
-                            <a class="navbar-brand" href="#"><img class="logo" src="assets/images/hf-logo.png"></a>
+            <section class="container recommendations" id="recommendations">
+                <div class="col-12">
+                    <h2 class="section-title repositories">
+                        Conteúdos recomendados
+                    </h2>
+                    <div class="card-group">
+                        <div class="card text-white bg-dark">
+                            <iframe
+                                width="100%"
+                                height="220"
+                                src="https://www.youtube.com/embed/PGxTuv6k0KI"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    5 Hábitos que Todo o Programador Júnior Já
+                                    Deveria Ter
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >23 de agosto de 2021</small
+                                    >
+                                </p>
+                            </div>
                         </div>
-                    </nav>
+                        <div class="card-space-between"></div>
+                        <div class="card text-white bg-dark">
+                            <iframe
+                                width="100%"
+                                height="220"
+                                src="https://www.youtube.com/embed/J4BVaXkwmM8"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    A Primeira Aula de Flutter Que Todo Mundo
+                                    Deveria Ter
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >22 de fevereiro de 2021</small
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-space-between"></div>
+                        <div class="card text-white bg-dark">
+                            <iframe
+                                width="100%"
+                                height="220"
+                                src="https://www.youtube.com/embed/f7JWDLFhR_c"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Como Fazer Uma API (o jeito mais fácil e
+                                    moderno que eu já vi)
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >18 de janeiro de 2021</small
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            type="button"
+                            class="
+                                col-12 col-md-5 col-lg-4
+                                btn btn-primary
+                                recommendations
+                            "
+                        >
+                            <i class="bi bi-plus"></i>
+                            Carregar mais recomendações
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </main>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <footer id="footer"></footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    -->
-</body>
-
+        <script src="index.js"></script>
+        <script type="module" src="components/header.js"></script>
+        <script src="components/footer.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
