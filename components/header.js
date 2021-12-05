@@ -1,8 +1,8 @@
 header.innerHTML = `<section class="row header">
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/../../"
-            ><img class="logo" src="/../../assets/images/hf-logo.png"
+        <a class="navbar-brand" href="/portfolio/../../"
+            ><img class="logo" src="/portfolio/../../assets/images/hf-logo.png"
         /></a>
         <button
             class="navbar-toggler"
