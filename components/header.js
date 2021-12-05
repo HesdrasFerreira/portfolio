@@ -24,27 +24,27 @@ header.innerHTML = `<section class="row header">
                     <a
                         class="nav-link active"
                         aria-current="page"
-                        href="/../../#about"
+                        href="/portfolio/../../#about"
                         >perfil</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/../../#projects"
+                    <a class="nav-link" href="/portfolio/../../#projects"
                         >projetos</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/../../#experience"
+                    <a class="nav-link" href="/portfolio/../../#experience"
                         >experiência</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/../../#repositories"
+                    <a class="nav-link" href="/portfolio/../../#repositories"
                         >repositórios github</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/../../#recommendations"
+                    <a class="nav-link" href="/portfolio/../../#recommendations"
                         >conteúdo</a
                     >
                 </li>
