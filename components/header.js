@@ -1,8 +1,8 @@
 header.innerHTML = `<section class="row header">
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../../"
-            ><img class="logo" src="../../assets/images/hf-logo.png"
+        <a class="navbar-brand" href="/../../"
+            ><img class="logo" src="/../../assets/images/hf-logo.png"
         /></a>
         <button
             class="navbar-toggler"
@@ -24,27 +24,27 @@ header.innerHTML = `<section class="row header">
                     <a
                         class="nav-link active"
                         aria-current="page"
-                        href="../../#about"
+                        href="/../../#about"
                         >perfil</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../#projects"
+                    <a class="nav-link" href="/../../#projects"
                         >projetos</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../#experience"
+                    <a class="nav-link" href="/../../#experience"
                         >experiência</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../#repositories"
+                    <a class="nav-link" href="/../../#repositories"
                         >repositórios github</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../#recommendations"
+                    <a class="nav-link" href="/../../#recommendations"
                         >conteúdo</a
                     >
                 </li>
