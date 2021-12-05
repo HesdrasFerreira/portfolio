@@ -1,8 +1,8 @@
 header.innerHTML = `<section class="row header">
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/portfolio/../../"
-            ><img class="logo" src="/portfolio/../../assets/images/hf-logo.png"
+        <a class="navbar-brand" href="../index.html"
+            ><img class="logo" src="../assets/images/hf-logo.png"
         /></a>
         <button
             class="navbar-toggler"
@@ -24,27 +24,27 @@ header.innerHTML = `<section class="row header">
                     <a
                         class="nav-link active"
                         aria-current="page"
-                        href="/portfolio/../../#about"
+                        href="../index.html#about"
                         >perfil</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portfolio/../../#projects"
+                    <a class="nav-link" href="../index.html#projects"
                         >projetos</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portfolio/../../#experience"
+                    <a class="nav-link" href="../index.html#experience"
                         >experiência</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portfolio/../../#repositories"
+                    <a class="nav-link" href="../index.html#repositories"
                         >repositórios github</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portfolio/../../#recommendations"
+                    <a class="nav-link" href="../index.html#recommendations"
                         >conteúdo</a
                     >
                 </li>
@@ -79,7 +79,7 @@ searchForm.addEventListener(
 
         switch (event.key) {
             case 'Enter':
-                location.href = `/portfolio/pages/Search/?q=${searchForm.value}`;
+                location.href = `../pages/Search/?q=${searchForm.value}`;
                 break;
             default:
                 return;
