@@ -79,7 +79,7 @@ searchForm.addEventListener(
 
         switch (event.key) {
             case 'Enter':
-                location.href = `/portfolio/../pages/Search/?q=${searchForm.value}`;
+                location.href = `./portfolio/../pages/Search/?q=${searchForm.value}`;
                 break;
             default:
                 return;
