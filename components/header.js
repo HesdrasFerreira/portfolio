@@ -1,8 +1,8 @@
 header.innerHTML = `<section class="row header">
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="portfolio/../index.html"
-            ><img class="logo" src="portfolio/../assets/images/hf-logo.png"
+        <a class="navbar-brand" href="https://hesdras.github.io/portfolio"
+            ><img class="logo" src="https://hesdras.github.io/portfolio/assets/images/hf-logo.png"
         /></a>
         <button
             class="navbar-toggler"
@@ -24,27 +24,27 @@ header.innerHTML = `<section class="row header">
                     <a
                         class="nav-link active"
                         aria-current="page"
-                        href="portfolio/../../index.html#about"
+                        href="https://hesdras.github.io/portfolio/#about"
                         >perfil</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio/../index.html#projects"
+                    <a class="nav-link" href="https://hesdras.github.io/portfolio/#projects"
                         >projetos</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio/../index.html#experience"
+                    <a class="nav-link" href="https://hesdras.github.io/portfolio/#experience"
                         >experiência</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio/../index.html#repositories"
+                    <a class="nav-link" href="https://hesdras.github.io/portfolio/#repositories"
                         >repositórios github</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio/../index.html#recommendations"
+                    <a class="nav-link" href="https://hesdras.github.io/portfolio/#recommendations"
                         >conteúdo</a
                     >
                 </li>
@@ -79,7 +79,7 @@ searchForm.addEventListener(
 
         switch (event.key) {
             case 'Enter':
-                location.href = `portfolio/../pages/Search/?q=${searchForm.value}`;
+                location.href = `https://hesdras.github.io/portfolio/pages/Search/?q=${searchForm.value}`;
                 break;
             default:
                 return;
