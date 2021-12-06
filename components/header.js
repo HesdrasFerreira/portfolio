@@ -1,8 +1,8 @@
 header.innerHTML = `<section class="row header">
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"
-            ><img class="logo" src="../assets/images/hf-logo.png"
+        <a class="navbar-brand" href="portfolio/../index.html"
+            ><img class="logo" src="portfolio/../assets/images/hf-logo.png"
         /></a>
         <button
             class="navbar-toggler"
@@ -29,22 +29,22 @@ header.innerHTML = `<section class="row header">
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#projects"
+                    <a class="nav-link" href="portfolio/../index.html#projects"
                         >projetos</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#experience"
+                    <a class="nav-link" href="portfolio/../index.html#experience"
                         >experiência</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#repositories"
+                    <a class="nav-link" href="portfolio/../index.html#repositories"
                         >repositórios github</a
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#recommendations"
+                    <a class="nav-link" href="portfolio/../index.html#recommendations"
                         >conteúdo</a
                     >
                 </li>
@@ -79,7 +79,7 @@ searchForm.addEventListener(
 
         switch (event.key) {
             case 'Enter':
-                location.href = `../pages/Search/?q=${searchForm.value}`;
+                location.href = `portfolio/../pages/Search/?q=${searchForm.value}`;
                 break;
             default:
                 return;
